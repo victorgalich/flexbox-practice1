@@ -102,15 +102,18 @@ body {
 }
 /*=================================*/
 
-.footer__text {
+.footer {
+   display: flex;
+   justify-content: center;
+   height: 65px;
    background-color: $color3;
+}
+
+.footer__text {
    color: $color1;
    font-size: 12px;
-   line-height: 24px;
    letter-spacing: 0.25;
-   text-align: center;
-   height: 65px;
-   vertical-align: center;
+   align-self: center;
 }
 /*==========================*/
 
@@ -120,6 +123,12 @@ body {
    padding: 50px;
 }
 
+.head-row {
+   color: $color1;
+   font-size: 30px;
+   line-height: 36px;
+   text-align: center;
+}
 .example-block__head-row {
    color: $color1;
    font-size: 30px;
@@ -160,3 +169,73 @@ body {
 }
 /*=========================*/
 
+.be-glad-block {
+   background-color: $color2;
+   padding: 0 45px 50px;
+   margin: 0 50px;
+}
+.be-glad-block__head-row {
+   margin: 30px 0;
+}
+
+.be-glad-block__content-row {
+   display: flex;
+   justify-content: center;
+   
+}
+.be-glad-block__card {
+   flex: 1 1 33.333%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   background-color: $color1;
+   border-radius: 5px;
+   border: $color1 solid 1px;
+   margin: 0 22.5px;
+}
+
+.be-glad-block__caption1 {
+   font-size: 24px;
+   color: $color2;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 15px 0; 
+}
+
+.be-glad-block__caption2 {
+   text-align: center;
+   font-size: 40px;
+   color: $color1;
+   background-color: $color2;
+   padding: 12px 10px;
+}
+
+.be-glad-block__text {
+   flex: 1 1 auto;
+   font-size: 16px;
+   line-height: 24px;
+   color: $color2;
+   padding: 20px 28px 15px 20px;
+   
+}
+
+.be-glad-block__text p {
+   margin: 0 0 30px 0;
+   word-break: normal;
+   word-wrap: break-word;
+}
+
+.be-glad-block__text p:last-of-type {
+   margin-bottom: 0px;
+}
+
+.be-glad-block__bnt {
+   display: block;
+   font-size: 18px;
+   line-height: 40px;
+   margin: 15px;
+   color: $color1;
+   border-radius: 5px;
+   background-color: $color2;
+   text-align: center;
+}
